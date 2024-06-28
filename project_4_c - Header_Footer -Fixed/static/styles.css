@@ -1,0 +1,120 @@
+/* Base Style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Reset CSS */
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+/* NavBar start */
+/* Header */
+.header_c{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(78, 92, 103);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo */
+.logo{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: aliceblue; 
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Navbar items */
+li, a{
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block; /* To display in line  */
+}
+
+/* anchor tag */
+.nav_items a{
+    position: relative;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.nav_items a::before{
+    content: "";
+    position: absolute;
+    top:100%; /* you can define up or down  */
+    left:0;
+    width: 0 ;
+    height: 1.5px;
+    background: aliceblue;
+    transition: all 0.3s;
+}
+
+/* Hover effect */
+.nav_items a:hover::before{
+    width: 100% ;
+}
+
+/* button */
+.button{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* background-color: blue; */
+    border-radius: 50px;
+    line-height: 30px;
+    text-align: center;
+    border: 3px solid #009688;
+    color:#b5c3c1 ;
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.button:hover{
+    color: aliceblue;
+    background-color:#009688 ;
+}
+/* NavBar end */
+
+/* Footer starts */
+footer{
+    position: absolute;
+    background: rgb(78, 92, 103);
+    color: aliceblue;
+    font-weight: 200;
+    font-size: 10px;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+/* Footer ends */
+
+main{
+    position: absolute;
+    color: rgb(29, 100, 162);
+}

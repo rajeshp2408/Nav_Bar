@@ -5,4 +5,4 @@
 3. Nav Bar
 4. Nav Bar_ with border/button
 5. Nav Bar_ with header & footer
-6. Nav Bar_ with header & footer- Fixed
+6. Nav Bar_ with header & footer- Fixed (scrollable content)
